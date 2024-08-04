@@ -1,0 +1,13 @@
+apiVersoin: v1
+kind: Pod
+metadata:
+  name: ngnix-pod1
+  labels:
+    env: test
+    app: my-app
+spec:
+  container:
+    - name: ngnix-container
+      image: ngnix:latest
+      ports:
+        - containerPort: 80
