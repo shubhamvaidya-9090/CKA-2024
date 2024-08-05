@@ -19,5 +19,6 @@ spec:
             - containerPort: 80
   replicas: 3
   selector:
-    matchLabels: env: test
+    matchLabels: 
+      env: test
 
