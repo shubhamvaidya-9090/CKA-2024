@@ -9,7 +9,7 @@ spec:
     metadata:
       name: ngnix-app
       labels:
-        env: test
+        env: nginx-app
         app: my-app
     spec:
       containers:
