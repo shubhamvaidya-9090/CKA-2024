@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: DaemonSet
-metadataa:
+metadata:
   name: nginx-ds
   labels:
     env: demo
@@ -11,7 +11,7 @@ spec:
         env: demo
       name: nginx
     spec:
-      container:
+      containers:
         - image: nginx
           name: nginx
           ports:
