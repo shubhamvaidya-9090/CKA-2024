@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    env: nginx-app
+spec:
+  template:
+    metadata:
+      name: ngnix-app
+      labels:
+        env: nginx-app
+        app: my-app
+    spec:
+      containers:
+        - name: ngnix-container
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+  replicas: 1
+  selector:
+    matchLabels: 
+      env: nginx-app
