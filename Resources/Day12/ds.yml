@@ -1,0 +1,21 @@
+apiVesrion: apps/v1
+kind: DaemonSet
+metadataa:
+  name: nginx-ds
+  labels:
+    env: demo
+spec:
+  template:
+    metadata:
+      labels:
+        env: demo
+      name: nginx
+    spec:
+      container:
+        - image: nginx
+          name: nginx
+          ports:
+            - containerPort: 80
+  selector:
+    matchLabels:
+      env: demo
