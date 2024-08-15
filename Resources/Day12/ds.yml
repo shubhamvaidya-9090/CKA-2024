@@ -1,4 +1,4 @@
-apiVesrion: apps/v1
+apiVersion: apps/v1
 kind: DaemonSet
 metadataa:
   name: nginx-ds
