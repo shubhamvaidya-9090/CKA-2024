@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: manual-scheduled-pod
 spec:
-  nodeName: worker-node-1
+  nodeName: multi-cluster-node-worker
   containers:
   - name: nginx
     image: nginx
