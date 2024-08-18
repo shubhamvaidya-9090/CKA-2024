@@ -1,4 +1,4 @@
-my-prefer-noschedule-podapiVersion: v1
+apiVersion: v1
 kind: Pod
 metadata:
   name: my-node-selector-pod
