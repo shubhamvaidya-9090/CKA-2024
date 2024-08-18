@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-prefer-noschedule-pod
+  labels:
+    app: test-app
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+  tolerations:
+  - key: "cpu"
+    operator: "Equal"
+    value: "true"
+    effect: "PreferNoSchedule"
