@@ -1,0 +1,14 @@
+my-prefer-noschedule-podapiVersion: v1
+kind: Pod
+metadata:
+  name: my-node-selector-pod
+  labels:
+    app: test-app
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+  nodeSelector:
+    cpu: false
