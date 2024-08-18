@@ -11,4 +11,4 @@ spec:
     ports:
     - containerPort: 80
   nodeSelector:
-    cpu: "fals"
+    cpu: "false"
