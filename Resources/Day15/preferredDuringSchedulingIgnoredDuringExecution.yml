@@ -21,7 +21,7 @@ spec:
           - key: node
             operator: In
             values:
-            - first
+            - second
   tolerations:
   - key: "cpu"
     operator: "Equal"
