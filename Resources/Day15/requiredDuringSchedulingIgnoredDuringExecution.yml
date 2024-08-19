@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   labels:
     run: redis
-  name: redis-3
+  name: redis-1
 spec:
   containers:
   - image: redis
@@ -20,7 +20,7 @@ spec:
               - key: node
                 operator: In
                 values:
-                - first
+                - second
   tolerations:
   - key: "cpu"
     operator: "Equal"
