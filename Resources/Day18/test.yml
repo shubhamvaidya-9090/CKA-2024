@@ -8,7 +8,6 @@ spec:
   - name: liveness
     image: registry.k8s.io/e2e-test-images/agnhost:2.40
     args:
-    - liveness
     - /bin/sh
     - -c
     - touch /healthz; sleep 30
