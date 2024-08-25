@@ -13,13 +13,13 @@ spec:
     - containerPort: 8080
     livenessProbe:
       httpGet:
-        path: /tmp/healthz
+        path: /
         port: 8080
       initialDelaySeconds: 3
       periodSeconds: 3
     readinessProbe:
       httpGet:
-        path: /tmp/healthz
+        path: /
         port: 8080
       initialDelaySeconds: 15
       periodSeconds: 10
