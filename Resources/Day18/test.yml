@@ -15,15 +15,15 @@ spec:
     - touch /tmp/healthz; sleep 300
     ports:
     - containerPort: 8080
-    livenessProbe:
-      httpGet:
-        path: /tmp/healthz
-        port: 8080
-      initialDelaySeconds: 3
-      periodSeconds: 3
-    readinessProbe:
-      httpGet:
-        path: /tmp/healthz
-        port: 8080
-      initialDelaySeconds: 15
-      periodSeconds: 10
+    # livenessProbe:
+    #   httpGet:
+    #     path: /tmp/healthz
+    #     port: 8080
+    #   initialDelaySeconds: 3
+    #   periodSeconds: 3
+    # readinessProbe:
+    #   httpGet:
+    #     path: /tmp/healthz
+    #     port: 8080
+    #   initialDelaySeconds: 15
+    #   periodSeconds: 10
