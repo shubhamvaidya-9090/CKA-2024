@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: liveness
-    image: registry.k8s.io/busybox
+    image: iamshubhamvaidya520/my-images:health-check
     args:
     - /bin/sh
     - -c
