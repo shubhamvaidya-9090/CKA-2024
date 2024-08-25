@@ -93,9 +93,14 @@ spec:
     image: registry.k8s.io/goproxy:0.1
     ports:
     - containerPort: 8080
-    livenessProbe:
-      tcpSocket:
-        port: 3000
-      initialDelaySeconds: 10
-      periodSeconds: 5
+    # livenessProbe:
+    #   tcpSocket:
+    #     port: 3000
+    #   initialDelaySeconds: 10
+    #   periodSeconds: 5
+    # readinessProbe:
+    #   tcpSocket:
+    #     port: 3000
+    #   initialDelaySeconds: 10
+    #   periodSeconds: 5
 ```
