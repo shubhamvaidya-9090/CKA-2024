@@ -13,6 +13,8 @@ spec:
     - /bin/sh
     - -c
     - touch /tmp/healthz; sleep 300
+    ports:
+    - containerPort: 8080
     livenessProbe:
       httpGet:
         path: /tmp/healthz
