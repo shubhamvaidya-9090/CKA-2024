@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   labels:
     test: liveness
-  name: test_pod
+  name: test-pod
 spec:
   containers:
   - name: liveness
