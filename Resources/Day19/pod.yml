@@ -15,4 +15,9 @@ spec:
         configMapKeyRef:
           name: app-cm
           key: firstname
+    - name: LASTNAME
+      valueFrom:
+        configMapKeyRef:
+          name: app-cm
+          key: lastname
     command: ['sh', '-c', 'echo The app is running! && sleep 3600']
