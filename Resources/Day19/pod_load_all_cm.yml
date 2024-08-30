@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp-pod-load-CM
+  name: myapp-pod-load-cm
   labels:
     app.kubernetes.io/name: MyApp
 spec:
