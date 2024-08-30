@@ -11,5 +11,5 @@ spec:
     image: busybox:1.28
     envFrom:
     - secretRef:
-        name: test-secret
+        name: app-cm
     command: ['sh', '-c', 'echo The app is running! && sleep 3600']

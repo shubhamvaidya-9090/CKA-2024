@@ -3,6 +3,7 @@ apiVersion: v1
 data:
   firstname: Shubham
   lastname: Vaidya
+  company: Accenture
 kind: ConfigMap
 metadata:
   name: app-cm
