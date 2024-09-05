@@ -26,12 +26,12 @@
 
 **To generate a key file**
 ```
-openssl genrsa -out adam.key 2048
+openssl genrsa -out learner.key 2048
 ```
 
 **To generate a csr file**
 ```
-openssl req -new -key adam.key -out adam.csr -subj "/CN=adam"
+openssl req -new -key learner.key -out learner.csr -subj "/CN=learner"
 ```
 
 **To approve a csr**
